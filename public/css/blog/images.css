@@ -1,0 +1,21 @@
+header .blog {
+   background-image: url(http://res.cloudinary.com/lucianu/image/upload/v1480260923/header-1466853817435-05b43fe45b39_diun78.jpg);
+}
+
+header .article,
+article .zebra {
+   background-image: url(http://res.cloudinary.com/lucianu/image/upload/v1480260923/zebra-1468977189904-8bb4b196d8b8_gm6ebc.jpg);
+}
+
+article .girafa {
+   background-image: url(http://res.cloudinary.com/lucianu/image/upload/v1480260923/girafa-1447511423121-5286ebeb6f6d_iyflfd.jpg);
+}
+
+article .seaLion {
+   background-image: url(http://res.cloudinary.com/lucianu/image/upload/v1480260923/foca-1447675702052-663a7ef9eaa6_tzllx7.jpg);
+}
+.art-content .zebra-in {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   background-image: url(http://res.cloudinary.com/lucianu/image/upload/v1480546866/zebra-in-articol-w1_n9lbfp.jpg);
+}

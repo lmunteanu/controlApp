@@ -1,0 +1,170 @@
+.art-content {
+   box-sizing: border-box;
+   width: 768px;
+   margin: 0 auto;
+   overflow: hidden;
+}
+
+.art-content .art-top {
+   padding: 55px 0 40px 0;
+}
+
+.art-content .art-top .art-breadcrump {
+   font-size: 12px;
+   letter-spacing: 0.015em;
+   color: rgb( 192, 192, 192);
+}
+
+.art-content h2 {
+   font-size: 28px;
+   letter-spacing: 0.020em;
+   color: rgb( 52, 58, 64);
+   padding-top: 20px;
+}
+
+.art-content p {
+   padding: 11px 0 18px 0;
+   font-size: 16px;
+   letter-spacing: 0;
+   line-height: 188%;
+   color: rgb( 52, 58, 64);
+}
+
+
+.art-content .comments {
+   border-width: 1px 0 1px 0;
+   border-color: rgb( 233, 236, 239);
+   border-style: solid;
+   padding: 23px 0 30px 0;
+   margin-top: 17px;
+}
+
+.art-content .comments span {
+   font-size: 14px;
+   color: rgb( 52, 58, 64);
+   font-weight: bold;
+}
+
+.art-content .comment-box {
+   box-sizing: border-box;
+   width: 100%;
+   height: auto;
+   padding-top: 50px;
+}
+
+.art-content .comment-box .user-img {
+   box-sizing: border-box;
+   display: inline-block;
+   vertical-align: top;
+   width: 76px;
+   height: 76px;
+   border-radius: 50%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-image: url(http://res.cloudinary.com/lucianu/image/upload/v1480606296/user-img_opypfq.jpg);
+}
+
+.art-content .comment-box .user-comment {
+   display: inline-block;
+   width: 640px;
+   padding-left: 20px;
+}
+
+.art-content .comment-box .user-comment .user-name {
+   font-size: 14px;
+   color: rgb( 52, 58, 64);
+   font-weight: bold;
+   padding-right: 20px;
+}
+
+.art-content .comment-box .user-comment .posted-on {
+   font-size: 14px;
+   color: rgb( 52, 58, 64);
+   
+}
+
+.art-content .comment-box .user-comment .user-comment-text {
+   font-size: 14px;
+   color: rgb( 52, 58, 64);
+   line-height: 186%;
+   padding-top: 10px;
+}
+
+.art-content .add-comment {
+   box-sizing: border-box;
+   width: 100%;
+}
+
+.art-content .add-comment .add-c-header {
+   font-size: 14px;
+   color: rgb( 52, 58, 64);
+   font-weight: bold;
+   padding-top: 72px;
+   padding-bottom: 25px;
+}
+
+.art-content .add-comment textarea {
+   box-sizing: border-box;
+   width: 100%;
+   height: 210px;
+   border: 1px solid rgb( 214, 214, 214);
+   border-radius: 2px;
+   background-color: #fff;
+   font-family: inherit;
+   font-size: 14px;
+   letter-spacing: 0.015em;
+   line-height: 1.30em;
+   resize: none;
+   padding: 12px 20px;
+   overflow: auto;
+}
+
+.art-content .add-comment textarea:focus {
+   outline: none;
+   border: 1px solid rgb( 0, 0, 0);
+}
+
+.art-content .add-comment input {
+   box-sizing: border-box;
+   width: 100%;
+   height: 48px;
+   border: 1px solid rgb( 214, 214, 214);
+   border-radius: 2px;
+   padding-left: 20px;
+   font-size: 14px;
+   font-family: inherit;
+}
+
+.art-content .add-comment input:focus {
+   outline: none;
+   border: 1px solid rgb( 0, 0, 0);
+}
+
+.art-content .add-comment .add-c-desc {
+   font-size: 14px;
+   color: rgb( 52, 58, 64);
+   font-weight: bold;
+   padding: 15px 0 16px 0;
+}
+
+.art-content .add-comment .add-c-button {
+   padding-top: 65px;
+   padding-bottom: 120px;
+}
+
+.art-content .add-comment a {
+   background-color: rgb( 224, 224, 224);
+   color: rgb( 52, 58, 64);
+   font-size: 14px;
+   font-weight: bold;
+   padding: 14px 15px 14px 15px;
+   border: none;
+   cursor: pointer;
+   border-radius: 2px;
+   text-decoration: none;
+}
+
+.art-content .add-comment a:focus {
+   outline: none;
+}

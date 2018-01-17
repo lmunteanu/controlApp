@@ -1,0 +1,55 @@
+var CommentList = function(list) {
+   //var comments = []; sau
+   var self = this;
+   this.comments = [];
+   
+   //this.comments[0].getCommentText();
+   this.comments.filter(function(comment) {
+      if (comment.getCommentUser() === userId) {
+         return true;
+      }
+      return false;
+   });
+   
+   function init(arr) {
+      this.comments = arr.map(function(comment) {
+         return new Comments(comment);
+      });
+   }
+   
+   init(list);
+   
+   return {
+      createList : function(list) {
+         return self.comments;
+      },
+      addComment: function(obj) {},
+      removeComment: function(id) {},
+      updateComment: function(obj) {},
+      filter: function(obj) {},
+      order: function(obj) {},
+      display: function(element) {}
+   };
+};
+
+
+var arr = [
+   {
+      id: '123',
+      userid: '1223',
+      text: ' ',
+      date: ' ',
+      email: ' '
+   },
+   {
+      id: '222',
+      userid: '1231',
+      text: ' ',
+      date: ' ',
+      email: ' '
+   }
+];
+
+var l = new CommentList(arr);
+
+l.filter({userId: 12343});

@@ -1,0 +1,127 @@
+@media (max-width: 820px) {
+   header a {
+      display: none;
+   }
+   header .logo {
+      position: relative;
+      left: calc(((100vw - 450px) /2) + 10px);
+      /*padding-left: 15px;*/
+      /* to keep the logo and burger in the middle*/
+      /*padding-left: calc(((100vw - 450px) /2) + 10px);*/
+   }
+   header .menu-burger {
+      display: block;
+      padding-right: calc(((100vw - 450px) /2) - 20px);
+   }
+   aside {
+      display: none;
+   }
+   .content {
+      padding-top: 63px;
+      padding-left: 0;
+   }
+   .content .content-left .inbox {
+      padding-left: 0;
+   }
+   .content .content-left,
+   .content .content-right {
+      float: none;
+      padding-left: 0;
+      margin: auto;
+      overflow: auto;
+   }
+   #popin .close {
+      right: 0;
+      top: 0;
+   }
+}
+
+
+/*********************************/
+
+
+/* begin width smaller then 600px*/
+
+
+/*********************************/
+
+@media (max-width: 600px) {
+   header .logo {
+      position: relative;
+      left: 15px;
+   }
+   header .menu-burger {
+      padding-right: 0;
+   }
+   .content .content-left {
+      width: auto;
+      padding: 0 15px 0 15px;
+   }
+   .content .content-right {
+      width: auto;
+      padding: 0 15px 30px 15px;
+   }
+   .content .content-left .inbox {
+      margin-left: 0;
+   }
+   .content .content-left .laptop,
+   .content .content-left .code,
+   .content .content-right .donut {
+      float: none;
+      width: 100%;
+      margin-left: 0;
+   }
+   .content .content-left .laptop .laptop-img-div,
+   .content .content-left .code .code-img-div {
+      height: 0;
+      padding-bottom: 100%;
+   }
+   .product-img-text {
+      line-height: 45px;
+      letter-spacing: 0.3px;
+      margin-left: 20px;
+      font-size: 16px;
+   }
+   .content-right .comments .comments-text,
+   .content-right .views .textInfo {
+      position: relative;
+      top: 15px;
+   }
+   .content-right .comments,
+   .content-right .views {
+      float: none;
+      width: 100%;
+      margin-left: 0;
+   }
+   .content-right .views {
+      margin-top: 30px;
+   }
+   /*need to find a better solution for resizing*/
+   .donuts {
+      margin-left: 0;
+
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+   }
+   #piechart {
+      margin-top: 0;
+      width: 100%;
+      max-width: 600px;
+      /*height: calc(80vw - 20vw);*/
+      height: calc(100vw * 0.70);
+   }
+   .content .popin-content {
+      padding: 0 15px 15px 15px;
+   }
+   .content .popin-content .top .right-side,
+   .content .popin-content .top .breadcrump   {
+      margin-left: 0;
+      float: none;
+      display: block;
+   }
+
+   .content .popin-content .top .right-side {
+       margin-top: 15px;
+   }
+}

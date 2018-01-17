@@ -1,0 +1,59 @@
+<!--<php echo $TEMPLATE_VARS['actionMessage']; ?> -->
+<?php echo $TEMPLATE_VARS['validationMessage']; ?>
+<!--<a href="/control.php"> &lt---Inapoi </a>-->
+<div class="form-inline my-1">
+	<button type="button" class="btn btn-primary btn-sm " onclick="goBack()">Go Back</button>
+</div>
+
+<div class="row">
+	<div class="col-md-8 offset-md-2">
+
+	<form class="form-horizontal" method="POST" enctype="multipart/form-data" action="">
+
+	<div class="form-group">
+		<label for="input1">Id firma:</label>
+		<input class="form-control" type="textarea" id="input1" placeholder="id firma"
+				name="firma-id_firma"
+				value="<?=htmlspecialchars($TEMPLATE_VARS['controale']->cid_firma)?>" />
+	</div>
+
+	<div class="form-group">
+		<label for="input1">Data control: (Year/Month/Day)</label>
+		<input class="form-control" type="textarea" id="input1" placeholder="data control"
+				name="firma-data_control"
+				value="<?=htmlspecialchars($TEMPLATE_VARS['controale']->data_control)?>" />
+	</div>
+
+	<div class="form-group">
+		<label for="input1">Data introducere:</label>
+		<input class="form-control" type="textarea" id="input1" placeholder="data start"
+				name="firma-data_start" disabled
+				value="<?=htmlspecialchars($TEMPLATE_VARS['controale']->data_start)?>" />
+	</div>
+	
+	<div class="form-group">
+		<label for="input1">Data modificare:</label>
+		<input class="form-control" type="textarea" id="input1" placeholder="data update"
+				name="firma-data_update" disabled
+				value="<?=htmlspecialchars($TEMPLATE_VARS['controale']->data_update)?>" />
+	</div>
+
+	<div class="form-group">
+		<label for="input1">Ore control:</label>
+		<input class="form-control" type="textarea" id="input1" placeholder="Numar ore control"
+				name="firma-nr_ore"
+				value="<?=htmlspecialchars($TEMPLATE_VARS['controale']->nr_ore)?>" />
+	</div>
+
+	<div class="form-group">
+		<label for="input1">Observatii:</label>
+		<input class="form-control" type="textarea" id="input1" placeholder="observatii"
+				name="firma-observatii"
+				value="<?=htmlspecialchars($TEMPLATE_VARS['controale']->observatii)?>" />
+	</div>
+
+	<input class="btn btn-primary" name="Salveaza controlul" type="submit" value="Salveaza firma" />
+		</form>
+	</div>
+</div>
+  

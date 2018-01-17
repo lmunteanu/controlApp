@@ -1,0 +1,227 @@
+/* begin drop shadows for all boxes */
+.box {
+  /*box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.15);*/
+  /*photoshop to css3 box-shadow converter*/
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  margin: 30px 0 0 30px;
+}
+/*begin "/" logo for header */
+header .logo:before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 24px;
+  width: 5px;
+  height: 20px;
+  transform: skew(161deg);
+  background: #354e66;
+}
+/*begin hamburger css icon*/
+header .hamburger {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 12px;
+  margin-top: 22px;
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+}
+
+header .hamburger:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  width: 100%;
+  border-top: 4px solid #000;
+}
+/*begin large eye css icon*/
+.eye {
+  float: left;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  width: 54px;
+  height: 54px;
+  background: white;
+  transform: rotate(45deg);
+  border-radius: 80% 0 80% 0;
+}
+
+.eye:before {
+  content: '';
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: absolute;
+  background: #00d298;
+  top: 12px;
+  left: 12px;
+}
+
+.eye:after {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  content: '';
+  height: 0;
+  width: 0;
+  border-radius: 50%;
+  border-left: 7px solid white;
+  border-right: 7px solid white;
+  border-bottom: 7px solid white;
+  border-top: 7px solid transparent;
+}
+/*begin large message css icon*/
+.message {
+  position: relative;
+  top: 31px;
+  left: 23px;
+  height: 32px;
+  width: 40px;
+  background: #ffffff;
+  border-radius: 5px;
+  color: #9775fa;
+  font-size: 40px;
+  text-align: center;
+  line-height: 10px;
+}
+
+.message:before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  left: 8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 6px 0 0;
+  border-color: #ffffff transparent transparent transparent;
+}
+/*begin small message css icon*/
+.small-message {
+  position: relative;
+  top: 14px;
+  left: 16px;
+  height: 19px;
+  width: 25px;
+  background: black;
+  border-radius: 4px;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  line-height: 5px;
+}
+
+.small-message:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 7px;
+  top: 18px;
+  border: 4px solid;
+  border-color: black transparent transparent black;
+}
+/*begin close x for articles*/
+.close {
+  content: '';
+  position: absolute;
+  z-index: 205;
+  right: -33px;
+  top: -29px;
+  width: 22px;
+  height: 22px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.close:before,
+.close:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  background: #fff;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
+/*begin close x for login pages*/
+.lclose {
+  content: '';
+  position: absolute;
+  z-index: 205;
+  right: 40px;
+  top: 30px;
+  width: 22px;
+  height: 22px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.lclose:before,
+.lclose:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  background: #000;
+}
+
+.lclose:before {
+  transform: rotate(45deg);
+}
+
+.lclose:after {
+  transform: rotate(-45deg);
+}
+
+/* begin aclose - article close x */
+.aclose {
+  content: '';
+  position: absolute;
+  z-index: 205;
+  right: 5px;
+  top: 5px;
+  width: 22px;
+  height: 22px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.aclose:before,
+.aclose:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  background: red;
+}
+
+.aclose:before {
+  transform: rotate(45deg);
+}
+
+.aclose:after {
+  transform: rotate(-45deg);
+}
+.hidden {
+ display: none;
+}
+.laptop-img-div:hover > .hidden {
+   display: block;
+}

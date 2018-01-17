@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Smartboard - Luci</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta content="description" content="My smartboard">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/public/css/style.css" type="text/css" />
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript">
+		google.charts.load('current', {
+			packages: ['corechart']
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<div class="logo">/ SMARTBOARD</div>
+		<a class="dash" href="#">MY DASHBOARD</a>
+		<a class="stats" href="#">STATISTICS</a>
+		<div class="menu-burger">
+			<div class="hamburger"></div>
+		</div>
+	</header>
+	<!-- end header-->
+
+	<aside>
+		<div class="aside-content">
+			<div class="aside-user">
+				<div class="user-img"></div>
+				<p class="user-text">Current user</p>
+			</div>
+			<button class="button">Create new</button>
+			<div class="aside-menu">
+				<a class="active" href="#">Dashboard</a>
+				<a href="#">Widgets</a>
+				<a href="#">Charts</a>
+				<a href="#">Tables</a>
+				<a href="#">Alerts</a>
+			</div>
+			<div class="login-logout">
+				<a href="login.html">Logout</a>
+			</div>
+		</div>
+	</aside>
+	<!--end aside-->
+
+	<div class="content">
+		<div class="content-left">
+			<div class="inbox">
+				<div class="inboxHeader">
+					<div class="smc">
+						<div class="small-message">...</div>
+					</div>
+					<span class="inboxHText">Inbox </span>
+				</div>
+				<div class="inboxContent">
+					<p class=inboxCText>
+						Want to see how your emails look in over 50+ desktop, mobile, and webmail clients, including in plain text? Never forget to include plain text as part of your next email campaign with Litmus Checklist.
+					</p>
+					<a href="#" class="read-more">Read more</a>
+				</div>
+			</div>
+			<div class="laptop">
+				<a href="article-details.html">
+					<div class="laptop-img-div"></div>
+					<p class="product-img-text"> New Product </p>
+				</a>
+			</div>
+			<div class="code">
+				<div class="code-img-div"></div>
+				<p class="product-img-text"> Copy of New Product </p>
+			</div>
+		</div>
+		<!-- end left content -->
+
+		<div class="content-right">
+			<div class="content-right-up">
+				<!-- unused in css -->
+				<div class="comments">
+					<div class="comments-logo">
+						<div class=message>...</div>
+					</div>
+					<div class="comments-text">
+						<!--unused class -->
+						<p class="com-viewNumbers">52 </p>
+						<p class="com-viewText">Comments</p>
+					</div>
+				</div>
+				<div class="views">
+					<div class="views-logo">
+						<div class=eye> </div>
+					</div>
+					<div class="textInfo">
+						<p class="com-viewNumbers">26.4k </p>
+						<p class="com-viewText">Views</p>
+					</div>
+				</div>
+			</div>
+			<!-- end right up content -->
+			<div class="donut" id="piechart">
+
+				<!--	<div class="donut-img-div"></div>-->
+			</div>
+		</div>
+		<!-- end right content -->
+	</div>
+	<!-- end content -->
+
+	<div class="overlay">
+		<div class="article-on-top">
+			<div class="article-header-image"></div>
+			<div class="art-container">
+				<div class="details">
+					<span>CATEGORIE</span>
+					<span>/</span>
+					<span>BY ADMIN</span>
+					<span>/</span>
+					<span>05.11.2016</span>
+				</div>
+				<div class="edit-link">
+					<a href="article-edit.html">Editeaza articolul</a>
+				</div>
+				<div class="article-content">
+					<h1>Un articol despre IT-isti</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eleifend volutpat dolor, sed ultricies risus lacinia non. Fusce bibendum non magna eu euismod. Nunc ut justo eu erat tristique tristique. Maecenas aliquam nisi augue, nec placerat lectus maximus
+						suscipit. Curabitur consectetur risus dolor, id viverra justo volutpat nec. Suspendisse nec aliquet felis. In suscipit sem ut velit gravida, nec imperdiet urna mattis. Donec et diam orci. In ac lorem mi.
+					</p>
+					<br>
+					<p>
+						Mauris ut fermentum odio. Vestibulum venenatis risus magna, quis sodales leo ultricies et. In et metus lectus. Nunc cursus dui sit amet ante molestie efficitur. Proin sit amet lectus lectus. Donec finibus sodales massa faucibus feugiat. Mauris non ex
+						nulla. Aliquam nunc magna, maximus et egestas non, elementum dignissim lacus. Integer dignissim, mauris et vulputate suscipit, eros risus pellentesque mi, in dictum orci nibh non orci. In volutpat odio eget elit tincidunt, ut vehicula sapien venenatis.
+						In risus augue, gravida ut venenatis a, consectetur eget diam. Duis ut massa ipsum. Vestibulum ligula nulla, malesuada posuere viverra viverra, tincidunt quis ex. Nam ultrices ut turpis vitae aliquet.
+					</p>
+					<br>
+					<p>
+						Pellentesque nisi ante, sodales ac facilisis eu, scelerisque vehicula magna. Proin lectus velit, dignissim nec dignissim in, fringilla sed quam. Nam aliquet, diam et pharetra pulvinar, ante turpis volutpat enim, eget lobortis mi sapien non massa. Curabitur
+						sed pellentesque neque. Nunc ullamcorper enim at nibh consectetur fermentum. Integer odio massa, ornare ut lacus a, venenatis sollicitudin augue. Sed porta lacus non metus molestie rutrum. Pellentesque ut aliquam lacus, vitae venenatis mauris. In
+						semper libero non aliquet efficitur. Aenean ut pellentesque nisl, vel rhoncus risus. Nullam maximus ante eget condimentum eleifend.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="/public/js/chart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+.first-image {
+   position: absolute;
+   left: 40px;
+   top: 150px;
+   opacity: 1;
+   transition: opacity 1000ms;
+}
+.second-image {
+   position: absolute;
+   left: 40px;
+   top: 150px;
+   
+   opacity: 1;
+   transition: opacity 1000ms;
+}
+.fadeout {
+   opacity: 0;
+}

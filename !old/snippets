@@ -1,0 +1,17 @@
+home.php from pages/admin
+
+//$articles = Article::getAll();
+/*
+$articles = Article::getAll('WHERE user_id=' . User::getLogged()->id . 
+            ' ORDER BY date_created DESC');
+*/ 
+
+home.php from templates/admin
+<!--
+<div class="code box">
+	<a href="article.html">
+		<div class="code-img-div"></div>
+		<p class="product-img-text"> Copy of New Product </p>
+	</a>
+</div>
+-->

@@ -1,0 +1,177 @@
+body {
+   width: 100%;
+   margin: 0;
+   /*border: 1px solid red;*/
+   background: silver;
+   min-width: 424px;
+}
+
+a,
+a:hover:focus:visited {
+   text-decoration: none;
+   color: #3366BB;
+}
+
+.container {
+   margin: auto;
+   width: 90%;
+   max-width: 1100px;
+   border: 3px solid #73AD21;
+   padding: 10px;
+}
+
+.tabel-firme {
+   width: 100%;
+}
+
+.tabel-firme th {
+   height: 25px;
+   background-color: #4CAF50;
+   color: white;
+}
+
+.tabel-firme th,
+.tabel-firme td {
+   border-bottom: 1px solid #ddd;
+   padding: 7px;
+   text-align: left;
+}
+
+.tabel-firme tr:nth-child(even) {
+   background-color: #f2f2f2;
+}
+
+.tabel-firme tr:hover {
+   background-color: #ddd;
+}
+
+/* search styling */
+
+.search-div {
+   /*display: inline-block;*/
+}
+
+.searchbar {
+   float: left;
+
+
+}
+
+.sortBar {}
+
+form {
+   display: inline-block;
+   padding: 0;
+   margin: 0;
+}
+
+fieldset {
+   border: 1px solid #CCC;
+   border-radius: 5px;
+   margin: 0;
+   padding: 8px;
+   padding-bottom: 4px;
+   float: left;
+}
+
+label {
+   cursor: pointer;
+}
+
+p {
+   display: inline;
+}
+
+p+p {
+   /* what for!? */
+   margin: .5em 0 0;
+}
+
+.sortBar {
+   float: left;
+   display: none;
+}
+
+.abutton {
+   border: solid 1px #638a00;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+   -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+   font-size: 16px;
+   color: #ffffff;
+   padding: 1px 14px;
+   background: #62a664;
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #62a664), color-stop(100%, #29ab2d));
+   background: -moz-linear-gradient(top, #62a664 0%, #29ab2d 100%);
+   background: -webkit-linear-gradient(top, #62a664 0%, #29ab2d 100%);
+   background: -o-linear-gradient(top, #62a664 0%, #29ab2d 100%);
+   background: -ms-linear-gradient(top, #62a664 0%, #29ab2d 100%);
+   background: linear-gradient(top, #62a664 0%, #29ab2d 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62a664', endColorstr='#29ab2d', GradientType=0);
+   text-decoration: none;
+}
+
+.abutton:hover {
+   text-decoration: underline;
+}
+
+.mobile-view {
+   display: none;
+}
+
+/* end search styling */
+
+@media screen and (max-width: 600px) {
+   .mobile-view {
+      display: inline;
+   }
+
+
+   .searchbar {
+      float: left;
+      padding: 8px;
+      padding-bottom: 0;
+      /*width: 90%;*/
+      min-width: 200px;
+   }
+   .searchbar:first-child {
+      padding: 8px;
+      width: 100%;
+   }
+   .sortBar {
+      display: block;
+   }
+   fieldset {
+      margin: 0 4px;
+
+   }
+   table {
+      width: 100%;
+   }
+   thead {
+      display: none;
+   }
+   tr:nth-of-type(2n) {
+      background-color: inherit;
+   }
+   tr td:first-child {
+      background: #4caf50;
+      font-weight: bold;
+      font-size: 1.3em;
+      display: table-cell;
+   }
+   /* tr td:first-child + td {background: #f0f0f0; font-weight:bold;font-size:1.3em;} */
+   tbody td {
+      display: block;
+      text-align: center;
+   }
+   tbody td:before {
+      content: attr(data-th) "";
+      display: block;
+      text-align: left;
+      font-weight: bold;
+   }
+
+}

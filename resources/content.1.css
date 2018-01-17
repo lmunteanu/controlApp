@@ -1,0 +1,317 @@
+.content {
+  padding: 63px 0 0 230px;
+  height: calc(100% - 63px);
+  /*needed after overwriting the body bg with white for login pages*/
+  /*
+  ** posible fix removing login-up.css from style.css import 
+  ** and adding it after style.css in login.html pages
+  */
+  /*height: calc(100vh - 63px);*/
+  /* background: #F1F3F5;*/
+}
+
+.content .content-left,
+.content .content-right {
+  float: left;
+  width: 450px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.content .content-right {
+  padding-bottom: 30px;
+}
+
+
+/*begin left content*/
+
+.content .content-left .inbox {
+  width: 100%;
+}
+
+.content .content-left .inbox .inboxHeader {
+  height: 48px;
+  background: #f8f9fa;
+}
+
+.content .content-left .inbox .inboxHeader .smc {
+  float: left;
+}
+
+.content .content-left .inbox .inboxHeader .inboxHText {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 48px;
+  margin-left: 30px;
+}
+
+.content .content-left .inbox .inboxContent {
+  height: auto;
+  padding: 18px 30px 20px 30px;
+  background: white;
+}
+
+.content .content-left .inbox .inboxContent .inboxCText {
+  color: #343a40;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 22px;
+  padding-bottom: 10px;
+}
+
+.content .content-left .inbox .inboxContent .read-more {
+  color: #364fc7;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.content .content-left .laptop,
+.content .content-left .code {
+  float: left;
+  height: auto;
+  width: 210px;
+  background: white;
+  margin-top: 30px;
+}
+
+.content .content-left .code {
+  margin-left: 30px;
+}
+
+.content .content-left .laptop .laptop-img-div,
+.content .content-left .code .code-img-div {
+  height: 210px;
+  background-size: cover;
+  /*contain is keeping proportions but adds whitespace or repeats bgimg*/
+  background-image: url("http://res.cloudinary.com/lucianu/image/upload/v1477764652/laptop_distr_gcitxp.png");
+}
+
+.content .content-left .code .code-img-div {
+  background-image: url("http://res.cloudinary.com/lucianu/image/upload/v1477764652/code_distr_pap3hh.png");
+}
+
+.content .content-left .laptop a,
+.content .content-left .code a {
+  text-decoration: none;
+  color: #343A40;
+}
+
+.product-img-text {
+  line-height: 45px;
+  letter-spacing: 0.3px;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+
+/*end left content*/
+
+
+/*begin right content*/
+
+.content-right .comments,
+.content-right .views {
+  float: left;
+  width: 210px;
+  height: 90px;
+  background: white;
+}
+
+.content-right .views {
+  margin-left: 30px;
+}
+
+.content-right .comments .comments-logo,
+.content-right .views .views-logo {
+  float: left;
+  width: 95px;
+  height: 100%;
+  background-color: #9775fa;
+}
+
+.content-right .views .views-logo {
+  background: #20c997;
+}
+
+.content-right .comments .comments-text,
+.content-right .views .textInfo {
+  height: 100%;
+}
+
+.content-right .comments .comments-text .com-viewNumbers,
+.content-right .views .textInfo .com-viewNumbers {
+  font-size: 34px;
+  margin-top: 14px;
+  padding-left: 120px;
+  line-height: 30px;
+}
+
+.content-right .comments .comments-text .com-viewText,
+.content-right .views .textInfo .com-viewText {
+  font-size: 16px;
+  color: #8e969d;
+  padding-left: 120px;
+  line-height: 30px;
+}
+
+#piechart {
+  float: left;
+  margin-top: 30px;
+  width: 100%;
+  height: 350px;
+  max-width: 450px;
+  /*display: inline-block; */
+}
+
+
+/*begin article edit/details part */
+.content .whitebg {
+width: 100%;
+height: 100%;
+background-color: white;
+}
+.content .article-cnt {
+  max-width: 950px;
+}
+.content .bg {
+  /*background-image: url(https://static.cinemagia.ro/img/db/movie/58/91/22/minions-857692l.jpg);*/
+  background-image: url(http://res.cloudinary.com/lucianu/image/upload/v1478640185/laptop-header-fullsize_distr_nuet84.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 260px;
+  border-radius: 3px 3px 0 0;
+}
+
+.content .popin-content {
+  background-color: #fff;
+  padding: 0 75px 55px 75px;
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* popin-content in the edit article page */
+
+.content .pcedit {
+  padding: 0 56px 20px 56px;
+}
+
+.content .popin-content .top {
+  padding-top: 30px;
+}
+
+.content .popin-content .top .breadcrump {
+  color: #354E66;
+  font-size: 14px;
+  float: left;
+}
+
+
+/*breadcrump in the edit article page */
+
+.content .popin-content .top .bedit {
+  margin-left: 20px;
+}
+
+.content .popin-content .top .right-side {
+  float: right;
+}
+
+.content .popin-content .top .right-side a {
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  color: #868e96;
+  text-decoration: underline;
+}
+
+.content .popin-content .top .right-side a:hover {
+  /*color: #354e66;*/
+  color: #364F63;
+}
+
+
+/* the save button as a href */
+
+.content .popin-content .top .rsedit a {
+  /*appearance: button;*/
+  /* For Good Browsers */
+  /*-moz-appearance: button;*/
+  /* For Firefox */
+  /*-webkit-appearance: button;*/
+  /* For Safari and Chrome */
+  background-color: #5DC87F;
+  color: white;
+  font-size: 14px;
+  padding: 8px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  text-decoration: none;
+  letter-spacing: 0.015em;
+  outline: none;
+}
+
+.content .popin-content .top .rsedit a:hover:active:focus {
+  color: #fff;
+  outline: none;
+}
+
+.content .popin-content .title {
+  clear: both;
+  color: #000;
+  font-size: 32px;
+  font-weight: 600;
+  padding: 22px 0 22px 0;
+}
+
+.content .popin-content input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 46px;
+  /*only on focus!*/
+  /*border: 1px solid #354E66;*/
+  border: 1px solid #DFE0E4;
+  border-radius: 4px;
+  padding-left: 18px;
+  font-size: 32px;
+  font-family: inherit;
+  font-weight: 600;
+  margin-top: 20px;
+  outline: none;
+}
+
+.content .popin-content .text {
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.30em;
+  letter-spacing: 0.015em;
+}
+
+.content .popin-content textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 303px;
+  padding: 12px 20px;
+  border: 1px solid #DFE0E4;
+  border-radius: 4px;
+  margin-top: 7px;
+  background-color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  letter-spacing: 0.015em;
+  line-height: 1.30em;
+  resize: none;
+  overflow: auto;
+  outline: none;
+}
+
+.content .popin-content input:focus,
+.content .popin-content textarea:focus {
+  border: 1px solid #354E66;
+  outline: none;
+}
